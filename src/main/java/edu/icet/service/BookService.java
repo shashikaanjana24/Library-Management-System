@@ -1,4 +1,7 @@
 package edu.icet.service;
 
-public class BookService {
+import edu.icet.dto.Book;
+
+public interface BookService {
+    public void addBook(Book book);
 }

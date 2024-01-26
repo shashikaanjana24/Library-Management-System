@@ -1,13 +1,11 @@
 package edu.icet.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -15,7 +13,7 @@ import lombok.Setter;
 public class BookEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+     Long id;
     private String isbn;
     private String title;
     private String author;
